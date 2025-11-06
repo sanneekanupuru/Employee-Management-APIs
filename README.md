@@ -1,4 +1,4 @@
-# Employee Management System - Spring Boot
+# Employee Management APIs - Spring Boot
 
 This is a simple Spring Boot project built to perform basic CRUD (Create, Read, Update, Delete) operations on Employee data. It also includes search functionality implemented in three ways (JPA Specifications, HQL/JPQL and Native SQL), basic validations, meaningful HTTP responses, unit tests (Mockito) and integration tests.
 
