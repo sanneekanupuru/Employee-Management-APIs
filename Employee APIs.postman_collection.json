@@ -1,0 +1,275 @@
+{
+	"info": {
+		"_postman_id": "83c07f36-60fc-4fdc-9cd4-de684e18fb88",
+		"name": "Employee APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47594775",
+		"_collection_link": "https://sanneekanupuru-2295685.postman.co/workspace/Sannee's-Team's-Workspace~0fec76a2-0824-4980-8483-5aa7d50cfd9b/collection/47594775-83c07f36-60fc-4fdc-9cd4-de684e18fb88?action=share&source=collection_link&creator=47594775"
+	},
+	"item": [
+		{
+			"name": "FetchByEmail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/employees/email/sannee@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"email",
+						"sannee@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FetchByName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/name/sannee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"name",
+						"sannee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create (name, email required)",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Create (name, email, phone required)",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update (lastName, phone, address)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update (phone only)",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/phone/sannee@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"phone",
+						"sannee@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteByEmail",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/email/sannee@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"email",
+						"sannee@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search-JPA Specifications-Email",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/search/spec/email/sannee@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"search",
+						"spec",
+						"email",
+						"sannee@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search-JPA Specifications-Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/search/spec/name/sannee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"search",
+						"spec",
+						"name",
+						"sannee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search-HQL-Email",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/search/hql/email/sannee@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"search",
+						"hql",
+						"email",
+						"sannee@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search-HQL-Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/search/hql/name/sannee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"search",
+						"hql",
+						"name",
+						"sannee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search-Native SQL-Email",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/search/native/email/sannee@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"search",
+						"native",
+						"email",
+						"sannee@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search-Native SQL-Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/search/native/name/sannee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"search",
+						"native",
+						"name",
+						"sannee"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
